@@ -51,18 +51,11 @@ function mdToBBCode(text) {
         .replace(/ - /gmi, "—") 
     //.replace(/^>(.+)$/,"[quote]$1[/quote]")
 }
-function convert()
-    {
-    var left = document.getElementById("left_ta");
-    var right = document.getElementById("right_ta");
+function convert() {
+    const left = document.getElementById("left_ta");
+    const right = document.getElementById("right_ta");
     
-    var left_value = left.value;
-        //general Markdown conversion
-        left_value = mdToBBCode(left_value)  // italic
-        //
-        right.value = left_value;
-        console.log('converted');
-
-
-    }
+    right.value = mdToBBCode(left.value)
+    console.log('converted');
+}
     
