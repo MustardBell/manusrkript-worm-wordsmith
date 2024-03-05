@@ -20,13 +20,6 @@ function mdToBBCode(text) {
         .replace(/^[#]{3,3}\s*(.*[^\s])\s*[#]{3,3}\n?$/gmi, "[h3]$1[/h3]") // h3
         .replace(/^[#]{3,3}\s?(.*)\n?$/gmi, "[h3]$1[/h3]") // h3
         //
-        //.replace(/^[#]{2,2}\s*(.*[^\s])\s*[#]{2,2}\n?$/gmi, "[h2]$1[/h2]") // h2
-        //.replace(/^[#]{2,2}\s*(.*)\n?$/gmi, "[h2]$1[/h2]") // h2
-        //
-        //.replace(/^[#]{1,1}\s*(.*[^\s])\s*[#]{1,1}\n?$/gmi, "[h1]$1[/h1]") // h1
-        //.replace(/^(?!\n*[`]{3,3})[#]{1,1}\s*(.*)\n?$/gmi, "[h1]$1[/h1]") // h1
-        //
-        //.replace(/^\t|[ ]{4,4}(.*)/gmi, "$1")  //code; strips tabs
         .replace(/^\`{3,3}(.*)\n((?:.|\n)+?)\n\`{3,3}\n?$/gmi, "[code]$2[/code]") // back ticks
         .replace(/^\~{3,3}(.*)\n((?:.|\n)+?)\n\~{3,3}\n?$/gmi, "[code]$2[/code]") // tilde
         .replace(/\`([^\`].*?)\`/gmi, "[code single]$1[/code]") // inline code
