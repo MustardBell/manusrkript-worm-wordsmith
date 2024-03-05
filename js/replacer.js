@@ -1,5 +1,5 @@
-function mdToBBCode(left_value) {
-    return left_value
+function mdToBBCode(text) {
+    return text
         //
         .replace(/\[(.+?)\]\((.+?)(\s".*")?\)/gmi, '[url=$2]$1[/url]') // url
         //
