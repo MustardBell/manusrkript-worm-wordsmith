@@ -10,6 +10,7 @@ class PHO {
 }
 
 function mdToBBCode(text) {
+    if (!text) return text
     return text
         //
         .replace(/\[(.+?)\]\((.+?)(\s".*")?\)/gmi, '[url=$2]$1[/url]') // url
