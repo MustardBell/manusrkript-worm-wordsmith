@@ -77,7 +77,7 @@ function convert() {
         right.value = interlude.text
 
     } else {
-        right.value = mdToBBCode(left.value)
+        right.value = mdToBBCode(left)
     }
 
     console.log('converted');
