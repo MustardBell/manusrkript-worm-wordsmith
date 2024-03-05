@@ -4,8 +4,19 @@ class PHO {
 
     }
 
-    processAllPHOScenes(){
-        this.text = mdToBBCode(this.text)
+    processScene(scene){
+        return `\nINTERLUDE:\n${mdToBBCode(scene)}\nENDOFINTERLUDE\n`
+    }
+
+    processAllPHOScenes() {
+        this.text = this.text.replace(/(?:^|[\n\r])PHO Interlude(.*?)[\n\r]EOPHO Interlude(?:$|[\n\r])/gs, (_, scene) => {
+            // Process the captured content using your custom function
+            const replacement = this.processScene(scene);
+            // Return the replacement for the current line
+            return `${replacement}`;
+        });
+        
+        return this;
     }
 }
 
