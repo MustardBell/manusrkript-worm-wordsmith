@@ -1,3 +1,13 @@
+class PHO {
+    constructor(text) {
+        this.text = text
+
+    }
+
+    processAllPHOScenes(){
+        this.text = mdToBBCode(this.text)
+    }
+}
 
 function mdToBBCode(text) {
     return text
@@ -47,15 +57,28 @@ function mdToBBCode(text) {
         .replace(/(?<!#)\*\*([^\*].*?\*?)\*\*/gmi, "[b]$1[/b]") // bold
         .replace(/(^|\s|indent(?:=\d)?\]|\[|<| )\*(?!\*+\s)(.*?[^\*].*?)\*(?<!\s\*)/gmi, "$1[i]$2[/i]")
         //  MDASH
-        .replace(/(?<=[\w,!?'" ])--(?:[ \w,!?'"])/gmi, "—") 
-        .replace(/ - /gmi, "—") 
+        .replace(/(?<=[\w,!?'" ])--(?:[ \w,!?'"])/gmi, "—")
+        .replace(/ - /gmi, "—")
     //.replace(/^>(.+)$/,"[quote]$1[/quote]")
 }
+
 function convert() {
-    const left = document.getElementById("left_ta");
+    const left = document.getElementById("left_ta")?.value;
     const right = document.getElementById("right_ta");
-    
-    right.value = mdToBBCode(left.value)
+
+
+
+    const isPHO = /^PHO Interlude/m.test(left)
+
+    if (isPHO) {
+        // console.log('Detected PHO')
+        const interlude = new PHO(left)
+        interlude.processAllPHOScenes()
+        right.value = interlude.text
+
+    } else {
+        right.value = mdToBBCode(left.value)
+    }
+
     console.log('converted');
 }
-    
