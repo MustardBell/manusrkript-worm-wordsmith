@@ -336,9 +336,10 @@ class PHO {
             console.log(displacement)
             
             // Set offsets
-            if (!isNaN(new Date(stamp) ) && new Date(stamp) > referenceDate) {referenceDate = new Date(stamp) } else {
+            if (!isNaN(new Date(stamp)) && new Date(stamp) > this.settings.dateOP) { referenceDate = new Date(stamp) } else {
 
-            this.applyDisplacement(displacement, referenceDate);}
+                this.applyDisplacement(displacement, referenceDate);
+            }
             console.log('days ofset')
             console.log(this.getReadableTimeStamp(new Date(referenceDate)) )           
 
