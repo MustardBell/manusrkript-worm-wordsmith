@@ -730,6 +730,11 @@ You are viewing:
         return `${formattedDate}`;
     }
 
+    makeAbbrStamp(dateString){
+        if (this.settings.noabbr) return dateString
+        return `on [abbr="${this.getReadableTimeStamp(date)}"]${dateString}[/abbr]`;
+    }
+
     getTime(date = this.settings.date) {
 
         const options = {
@@ -743,7 +748,9 @@ You are viewing:
 
         const suffix = getNumberSuffix(date.getDate());
 
-        const result = `on [abbr="${this.getReadableTimeStamp(date)}"]${formattedDate.replace(/(?<=[A-Z][a-z]{2}\s+\d+\b)/, suffix)}[/abbr]`;
+        const dateString = formattedDate.replace(/(?<=[A-Z][a-z]{2}\s+\d+\b)/, suffix)
+
+        const result = this.makeAbbrStamp(dateString)
 
         //console.log(result);
 
