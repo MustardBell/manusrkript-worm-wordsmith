@@ -179,7 +179,7 @@ Maven	+14s	id:4	refer:notPHO id:whatever
 ---------
 Well, yes
 ****
-Carp	+2m	+0s
+Lung	+2m	+0s
 ------
 I find this amusing
 ****
@@ -220,16 +220,16 @@ O wow, a PHO post
 Replied on [abbr="02/04/2011, 12:00:01 PM Eastern Time"]Feb 4th, 2011[/abbr]:
 Am I late?  No, exact time magic!
 
-[b]Carp [/b]
+[b]Divine_Carp [/b]
 Replied on [abbr="02/04/2011, 12:02:00 PM Eastern Time"]Feb 4th, 2011[/abbr]:
 I find this amusing
 
 [b]Pyke [/b] (Verified Cape)  (Tinker) 
-Replied on [abbr="02/04/2011, 12:02:15 PM Eastern Time"]Feb 4th, 2011[/abbr]:
+Replied on [abbr="02/04/2011, 12:02:21 PM Eastern Time"]Feb 4th, 2011[/abbr]:
 Is it PHO, though?
 
 [b]Maven222 [/b] (Original Poster)  (Veteran Member) 
-Replied on [abbr="02/04/2011, 12:02:29 PM Eastern Time"]Feb 4th, 2011[/abbr]:
+Replied on [abbr="02/04/2011, 12:02:35 PM Eastern Time"]Feb 4th, 2011[/abbr]:
 Well, yes
 [/indent]
 [b]End of Page. 1[/b]
