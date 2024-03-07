@@ -183,7 +183,8 @@ Lung	+2m	+0s
 ------
 I find this amusing
 ****
-User 1  =2011-02-04T12:00:01-05:00
+User 1	=2011-02-04T12:00:01-05:00
+----
 Am I late?  No, exact time magic!
 
 EOREPLIES
@@ -215,17 +216,21 @@ Posted on [abbr="02/04/2011, 12:00:00 PM Eastern Time"]Feb 4th, 2011[/abbr]:
 O wow, a PHO post
 
 [b](Showing page 1 of 1)[/b][indent]
-[b]Divine_Carp [/b]
-Replied on [abbr="02/04/2011, 12:02:00 PM Eastern Time"]Feb 4th, 2011[/abbr]:
-I find this amusing
+[b]User 1 [/b]
+Replied on [abbr="02/04/2011, 12:00:01 PM Eastern Time"]Feb 4th, 2011[/abbr]:
+Am I late?  No, exact time magic!
 
 [b]Pyke [/b] (Verified Cape)  (Tinker) 
-Replied on [abbr="02/04/2011, 12:02:26 PM Eastern Time"]Feb 4th, 2011[/abbr]:
+Replied on [abbr="02/04/2011, 12:02:19 PM Eastern Time"]Feb 4th, 2011[/abbr]:
 Is it PHO, though?
 
 [b]Maven222 [/b] (Original Poster)  (Veteran Member) 
-Replied on [abbr="02/04/2011, 12:02:40 PM Eastern Time"]Feb 4th, 2011[/abbr]:
+Replied on [abbr="02/04/2011, 12:02:33 PM Eastern Time"]Feb 4th, 2011[/abbr]:
 Well, yes
+
+[b]Divine_Carp [/b]
+Replied on [abbr="02/04/2011, 12:04:33 PM Eastern Time"]Feb 4th, 2011[/abbr]:
+I find this amusing
 [/indent]
 [b]End of Page. 1[/b]
 [CENTER]■[/CENTER]
