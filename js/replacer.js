@@ -747,7 +747,7 @@ You are viewing:
 
         const dateString = formattedDate.replace(/(?<=[A-Z][a-z]{2}\s+\d+\b)/, suffix)
 
-        if (this.settings.noabbr) return `on ${dateString}:`;
+        if (this.settings.noabbr) return `on ${dateString}`;
         return `on [abbr="${this.getReadableTimeStamp(date)}"]${dateString}[/abbr]`;
 
         //console.log(result);
