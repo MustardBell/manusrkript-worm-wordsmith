@@ -1,5 +1,5 @@
 # Use Cases
-This repository has been forked from [https://github.com/feralhosting/feralhosting.github.io](`feralhosting/feralhosting.github.io`) and developed for a very specific use case: the conversion of Manuskript markdown code to BBCode for websites such as Spacebattles. Its practical use will primarily be limited to creative writing for Spacebattles (SB), and probably SV and QQ.
+This repository has been forked from [`feralhosting/feralhosting.github.io`](https://github.com/feralhosting/feralhosting.github.io) and developed for a very specific use case: the conversion of Manuskript markdown code to BBCode for websites such as Spacebattles. Its practical use will primarily be limited to creative writing for Spacebattles (SB), and probably SV and QQ.
 
 You can download Manuskript [here](https://github.com/olivierkes/manuskript). You can also use a plain-text editor if you are more interested in the PHO and Shardspeak conversion.
 
