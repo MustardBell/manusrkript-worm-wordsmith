@@ -730,18 +730,15 @@ You are viewing:
         return `${formattedDate}`;
     }
 
-    makeAbbrStamp(dateString){
-        if (this.settings.noabbr) return dateString
-        return `on [abbr="${this.getReadableTimeStamp(date)}"]${dateString}[/abbr]`;
-    }
-
     getTime(date = this.settings.date) {
+
+        const timeZone = this.settings.timeZone || 'America/New_York'
 
         const options = {
             month: 'short',
             day: 'numeric',
             year: 'numeric',
-            timeZone: 'America/New_York',
+            timeZone,
         };
 
         const formattedDate = date.toLocaleDateString('en-US', options);
@@ -750,7 +747,8 @@ You are viewing:
 
         const dateString = formattedDate.replace(/(?<=[A-Z][a-z]{2}\s+\d+\b)/, suffix)
 
-        const result = this.makeAbbrStamp(dateString)
+        if (this.settings.noabbr) return `on ${dateString}:`;
+        return `on [abbr="${this.getReadableTimeStamp(date)}"]${dateString}[/abbr]`;
 
         //console.log(result);
 
@@ -770,8 +768,6 @@ You are viewing:
                     return 'th';
             }
         }
-
-        return result;
 
     }
 
