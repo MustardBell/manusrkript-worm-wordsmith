@@ -1,12 +1,15 @@
-# Use Cases
-This repository has been forked from [`feralhosting/feralhosting.github.io`](https://github.com/feralhosting/feralhosting.github.io) and developed for a very specific use case: the conversion of Manuskript markdown code to BBCode for websites such as Spacebattles. Its practical use will primarily be limited to creative writing for Spacebattles (SB), and probably SV and QQ.
+# Credit
+This repository is built upon [`feralhosting/feralhosting.github.io`](https://github.com/feralhosting/feralhosting.github.io).
 
-You can download Manuskript [here](https://github.com/olivierkes/manuskript). You can also use a plain-text editor if you are more interested in the PHO and Shardspeak conversion.
+# Use Cases
+The Manuskript Worm Wordsmith is developed for a very specific use case: the conversion of Manuskript markdown code to BBCode for websites such as Spacebattles. Its practical use will primarily be limited to creative writing for Spacebattles (SB), and probably SV and QQ. You can convert any sort of text, but right now, it's tailored for Wormfics.
+
+You can get Manuskript [here](https://github.com/olivierkes/manuskript). You can also use a plain-text editor if you are more interested in the PHO and Shardspeak conversion.
 
 # Workflow
 Using this tool is straightforward: simply copy the code from the Manuskript text field and insert it into the top text field of the converter. Then, copy the converted BBCode from the bottom text field and insert it into Spacebattles (or whichever platform you use) and enjoy.
 
-However, if that were all there was to this tool, there would be no need to fork it from Feralhosting. It would be sufficient on its own. So, let's delve deeper into the more ultra-specialized content.
+However, if that were all there was to this tool, tools like <feralhosting.github.io> would be enough on their own. So, let's delve deeper into the more ultra-specialized content.
 
 ## PHO Interludes
 There are at least two tools that I know of that can help you generate BBCode for a PHO interlude. These tools didn't meet my needs because they are not true conversion tools; they are PHO interlude wizards where you craft the interlude like Lego blocks or a no-code flowchart. I wanted a tool that could convert my writing into a readable interlude, so I built it on top of the Feralhosting Markdown to BBCode converter.
