@@ -509,7 +509,7 @@ class PHO {
             console.log(page)
             for (const reply of page) {
                 if (!reply) continue
-                threadBBCode += "" + this.extractUser(reply.user, null, reply.date)
+                threadBBCode += this.extractUser(reply.user, true, reply.date)
                 threadBBCode += "\nReplied " + this.getTime(reply.date) + ':\n'
                 threadBBCode += reply.text
             }
@@ -868,7 +868,7 @@ function mdToBBCode(text) {
         .replace(/(?<!#)\*\*([^\*].*?\*?)\*\*/gmi, "[b]$1[/b]") // bold
         .replace(/(^|\s|indent(?:=\d)?\]|\[|<| )\*(?!\*+\s)(.*?[^\*].*?)\*(?<!\s\*)/gmi, "$1[i]$2[/i]")
         //  MDASH
-        .replace(/(?<=[\w,!?'" ])--(?:[ \w,!?'"])/gmi, "—")
+        .replace(/(?<=[\w,!?'" ])--(?=[ \w,!?'"])/gmi, "—")
         .replace(/ - /gmi, "—")
     //.replace(/^>(.+)$/,"[quote]$1[/quote]")
 }
